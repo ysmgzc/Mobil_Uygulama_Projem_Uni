@@ -199,51 +199,6 @@ class _LoginHomeState extends State<LoginHome> {
 }
 
 Widget _LoginHome(BuildContext context) {
-  final emailField = TextField(
-    obscureText: false,
-    decoration: InputDecoration(
-        contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        icon: Icon(Icons.mail_outline),
-        hintText: "Kullanıcı Adı",
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(32.0),
-        )),
-  );
-
-  final passwordField = TextField(
-    obscureText: true,
-    decoration: InputDecoration(
-        contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        icon: Icon(Icons.vpn_key),
-        hintText: "Parola",
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
-  );
-
-  final loginButton = Material(
-    elevation: 5.0,
-    borderRadius: BorderRadius.circular(30),
-    color: Colors.purple.shade900,
-    child: MaterialButton(
-      minWidth: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => HomePage(),
-          ),
-        );
-      },
-      child: Text(
-        "Giriş Yap",
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          color: Colors.white,
-          fontStyle: FontStyle.normal,
-        ),
-      ),
-    ),
-  );
 
   final registerButton = Material(
     elevation: 5.0,
